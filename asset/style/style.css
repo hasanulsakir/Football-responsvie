@@ -86,7 +86,7 @@ ul.nav-bar {
     display: grid;
     /* justify-content: center; */
     align-items: center;
-    padding: 153px 0px 86px 0px;
+    padding: 50px 0px 86px 0px;
     grid-template-columns: repeat(2, 1fr);
     /* width: 100%; */
     justify-content: space-between;
