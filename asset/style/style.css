@@ -17,9 +17,9 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+p {
     margin: 0px;
-    padding: 0px;
 }
 
 .container {
@@ -167,14 +167,14 @@ main.main-container {
     font-size: 28px;
     line-height: 40px;
     color: #18191F;
+    padding-bottom: 10px;
 }
 
-.player-description {
+.player-description p {
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
     color: #6C6C6C;
-    margin-top: 10px;
 }
 
 
@@ -235,12 +235,104 @@ main.main-container {
     line-height: 28px;
     color: #6C6C6C;
     padding-bottom: 24px;
-    margin-bottom: 0px;
+    margin: 0px;
 }
 
 .article-img img {
     width: 567px;
     height: 427px;
+    transition: box-shadow ease-in-out .5s, border-radius ease-in-out .5s;
+}
+
+.article-img img:hover {
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    cursor: cell;
+}
+
+
+/*--------------------------------------
+            Footer  Style Start
+---------------------------------------*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 61px;
+}
+
+.footer-logo img {
+    width: 483.87px;
+    height: 110px;
+}
+
+.social-icon {
+    display: flex;
+    /* margin-right: 10px; */
+    padding-bottom: 20px;
+}
+
+.round-corner {
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    background: #bdbcbc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 14px;
+    background: #E9EAE0;
+    transition: transform 1s, background 1s, color 1s;
+}
+
+.round-corner a {
+    text-decoration: none;
+}
+
+.round-corner>a {
+    color: #969BAB;
+    transition: background 1s;
+}
+
+.copywrite-text p {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    margin: 0px;
+}
+
+
+/* footer hover */
+
+.round-corner:hover i {
+    color: #FFFFFF;
+}
+
+.round-corner:nth-child(1):hover {
+    background: #2D25A0;
+    transform: scale(1.5);
+    cursor: pointer
+}
+
+.round-corner:nth-child(2):hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    transform: scale(1.5);
+    cursor: pointer
+}
+
+.round-corner:nth-child(3):hover {
+    background: #000;
+    transform: scale(1.5);
+    cursor: pointer
+}
+
+.round-corner:nth-child(4):hover {
+    background: #ea4c89;
+    transform: scale(1.5);
+    cursor: pointer
 }
 
 
